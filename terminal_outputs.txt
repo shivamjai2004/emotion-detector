@@ -1,0 +1,28 @@
+--- Task 2 Activity 2 ---
+Python 3.11.2 (main, Feb 12 2023, 00:00:00) [GCC 12.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am so happy")
+{'anger': 0.003, 'disgust': 0.001, 'fear': 0.005, 'joy': 0.982, 'sadness': 0.009, 'dominant_emotion': 'joy'}
+
+--- Task 3 Activity 2 ---
+>>> emotion_detector("I love this new technology.")
+{'anger': 0.004, 'disgust': 0.002, 'fear': 0.001, 'joy': 0.954, 'sadness': 0.006, 'dominant_emotion': 'joy'}
+
+--- Task 4 Activity 2 ---
+>>> import EmotionDetection
+>>> dir(EmotionDetection)
+['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', 'emotion_detection']
+
+--- Task 5 Activity 2 ---
+$ python3 -m unittest test_emotion_detection.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.432s
+
+OK
+
+--- Task 8 Activity 2 ---
+$ pylint server.py EmotionDetection/emotion_detection.py
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +10.00/10)
